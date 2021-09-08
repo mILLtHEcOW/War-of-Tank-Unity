@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class TankCamera : MonoBehaviour
 {
-    public Transform Target;
-
+    public Transform Target;      
     void FixedUpdate()
     {
-        if (Target == null)
-            return;
-        
-        transform.position = Target.position;
-       // transform.rotation = Target.rotation;
-        
-       
+        if (Target != null)//
+        {
+            transform.position = Target.position;
+        }
     }
 }
